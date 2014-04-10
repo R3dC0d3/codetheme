@@ -64,6 +64,18 @@
 								'title'		=> 'Login Page',
 								'desc'		=> ''
 							),
+						array(
+								'type'		=> 'gravity_forms',
+								'name'		=> 'admin_panel_form1',
+								'title'		=> 'AdminPanel :: User Details',
+								'desc'		=> 'Form used for the AdminPanel User Details tab'
+							),
+						array(
+								'type'		=> 'gravity_forms',
+								'name'		=> 'admin_panel_form2',
+								'title'		=> 'AdminPanel :: Steps',
+								'desc'		=> 'Form used for the AdminPanel Steps tab'
+							),
 					array(
 							'type' 		=> 'hr',
 							'name'		=> '',

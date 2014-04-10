@@ -1,14 +1,14 @@
-#wp-user-dashboard-tabs,
-  .tabs_list{
-	font-size: 0px;
-	background: #f1f1f1;
-	/*box-shadow: 0px 0px 1px 0px;*/
+#your-profile > .form-table, #your-profile > h3{
+	display: none;
 }
+#your-profile p {
+	margin: 0px;
+}
+
 .tabs_list{
 	margin-top: 25px;
 }
-#wp-user-dashboard-tabs h3,
- .tabs_list span{
+.tabs_list span{
 	display: inline-block;
 
 	font: 16px "Comic Sans Ms Bold";
@@ -22,12 +22,10 @@
 
 	cursor: pointer;
 }
-#wp-user-dashboard-tabs h3.active,
- .tabs_list span.active{
+.tabs_list span.active{
 	background-color: #fff;
 }
-#your-profile > .form-table,
- .tabs_cont > div{
+.tabs_cont > div{
 	display: none;
 	background: #fff;
 	padding: 10px;
@@ -38,8 +36,4 @@
 }
 .tabs_cont > div:first-child{
 	display: block;
-}
-
-#your-profile p {
-	margin: 0px;
 }
