@@ -37,3 +37,12 @@
 .tabs_cont > div:first-child{
 	display: block;
 }
+
+.tabs_cont iframe{
+	width: 100%;
+	overflow: hidden;
+}
+
+.tabs_cont iframe body{
+	background: #fff;
+}

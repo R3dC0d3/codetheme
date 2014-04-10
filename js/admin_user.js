@@ -1,3 +1,6 @@
+function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
 jQuery(document).ready(function($){
 	
 
@@ -13,4 +16,6 @@ jQuery(document).ready(function($){
 		console.log('.tabs_cont[is="'+$tabs_for+'"] div[is="'+$tab_for+'"]');
 		$('.tabs_cont[is="'+$tabs_for+'"] > div[is="'+$tab_for+'"]').show();
 	});
+
+	$('#your-profile > .form-table, #your-profile > h3').remove();
 });

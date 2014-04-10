@@ -18,6 +18,28 @@
 	/*-------------------------------------------------------------------------------------*/
 	/* Customize the Admin Panel Profile & User Edit Page
 	/*-------------------------------------------------------------------------------------*/
+	function pw_loading_scripts_wrong() {
+		// echo '<script type="text/javascript" src="http://localhost/wp-content/themes/codetheme/js/jquery.js?ver=3.8.2"></script>';
+	}
+	add_action('admin_head', 'pw_loading_scripts_wrong');
+
+	add_action('wp_head', 'ct_forms');
+	function ct_forms(){
+		global $theme_uri;
+		if(isset($_GET['ct_forms_page']) && $_GET['ct_forms_page'] > 0){
+			wp_enqueue_style("ct-admin-fields-style", $theme_uri."/css/admin_fields.css");
+			wp_enqueue_style("ct-admin-user-style", $theme_uri."/css/admin_user.css");
+			wp_enqueue_style("ct-admin-user-frame-style", $theme_uri."/css/admin_user_frame.css");
+			wp_enqueue_script("ct-admin-fields-script", $theme_uri."/js/admin_fields.js", array('jquery'));
+			wp_enqueue_script("ct-admin-user-script", $theme_uri."/js/admin_user.js", array('jquery'));
+			echo do_shortcode('[gravityform id=8 title=false description=false ajax=true tabindex=49]');
+
+			show_admin_bar(false);
+			wp_footer();
+
+			exit;
+		}
+	}
 	add_action('show_user_profile', 'ct_profile_page');
 	add_action('edit_user_profile', 'ct_profile_page');
 	function ct_profile_page($user) {
@@ -35,16 +57,20 @@
 		wp_enqueue_script("ct-admin-user-script", $theme_uri."/js/admin_user.js", array('jquery'));
 
 	?>
+			</form>
+			<input type="hidden" id='adminpanel_forms_page' value="<?php echo $adminpanel_forms_page; ?>">
+			<input type="hidden" id='ct_form1' value="<?php echo $user_details_form; ?>">
+			<input type="hidden" id='ct_form2' value="<?php echo $steps_form; ?>">
 			<div class='tabs_list' for='tabs_list1'>
 				<span class='active' for='tab1'>User &amp; School Info</span>
 				<span for='tab2'>Steps</span>
 			</div>
 			<div class='tabs_cont' is='tabs_list1'>
 				<div is="tab1">
-					<?php echo do_shortcode('[gravityform id='.$user_details_form.' title=false description=false ajax=true tabindex=49]'); ?>
+					<iframe onload='javascript:resizeIframe(this);' src="<?php echo get_site_url()."?ct_forms_page=".$user_details_form; ?>" scrolling='no' frameborder="0"></iframe>
 				</div>
 				<div is="tab2">
-					<?php echo do_shortcode('[gravityform id='.$steps_form.' title=false description=false ajax=true tabindex=49]'); ?>
+					<iframe onload='javascript:resizeIframe(this);' src="<?php echo get_site_url()."?ct_forms_page=".$steps_form; ?>" scrolling='no' frameborder="0"></iframe>
 				</div>
 			</div>
 		<?php
