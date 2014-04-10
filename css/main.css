@@ -1,0 +1,402 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+a{display: inline-block;}
+h1,h2,h3,h4,h5,h6,p{margin: 0px;}
+.clear{clear: both;}
+body{
+	background-color: #e4e6e8;
+}
+
+#social_bar{
+	position: fixed;
+	left: 0px;
+	top: 286px;
+}
+#social_bar ul{
+	list-style-type: none;
+	margin: 0px;padding: 0px;
+	font-size: 0px;
+}
+#social_bar ul li{
+	padding: 0px;margin:0px;
+}
+#social_bar ul li a.social{
+	position: relative;
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+}
+#social_bar ul li a.social:hover:before{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 48px;
+	height: 48px;
+	content: " ";
+	background-color: rgba(250, 250, 250, 0.2);
+}
+#social_bar ul li a.social.facebook{background: url('../img/social_facebook.png');}
+#social_bar ul li a.social.twitter{background: url('../img/social_twitter.png');}
+#social_bar ul li a.social.mail{background: url('../img/social_mail.png');}
+#social_bar ul li a.social.print{background: url('../img/social_print.png');}
+#social_bar ul li a.social.plus{background: url('../img/social_plus.png');}
+
+
+/* register your interest modal */
+#registerInterestModal{
+    max-width: 60%;
+    left: 60%;
+    padding-bottom: 10px;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+	#registerInterestModal h1{
+		margin-bottom: 15px;
+		/*font: 32px "Open Sans bold" !important;*/
+		font-size:32px;
+		font-weight:bold;
+		color: #585858;
+	}
+	#registerInterestModal .panel{
+		margin: 0px 10px 48px 10px;
+		/*font: 15px "Open Sans light" !important;*/
+		font:15px;
+		font-weight:normal;
+		color: #4d4d4d;
+		border: none;
+		background-color: #ebebeb;
+	}
+#registerInterestModal .gform_footer{
+	text-align: right;
+	padding-bottom: 0px;
+}
+	.button_style1, .button.gform_button{
+		background: #09c154;
+		border-radius: 36px;
+		padding: 26px 49px 22px 49px !important;
+		text-align: center;
+		font-size: 18px;
+		color: #fff;
+		transition: all .3s;
+
+		box-shadow: inset 0px 0px 0px #0AA84A;
+	}
+	.gform_next_button {
+		background-color:#a0cbee !important;
+	}
+	.button_style1:hover, .button.gform_button:hover{
+		color: #fff;
+		background: #0AA84A !important;
+	}
+	.button.gform_button{
+		background: #57cb86 !important;
+		margin-bottom: 0px;
+		margin-right: 38px;
+		padding: 23px 30px!important;
+		font-size: 18px !important;
+	}
+.register_your_interest label{
+	margin-top: 9px !important;
+	/*font: 15px "Open Sans semibold";*/
+	font-size:15px;
+	font-weight:bold;
+	color: #585858;
+}
+.register_your_interest input{
+	border: none;
+	box-shadow: none;
+	/*font: 15px "Open Sans bold" !important;*/
+	font-size:15px;
+	font-weight:bold;
+	background-color: #ebebeb;
+	box-sizing: border-box;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+.register_your_interest input:hover, .register_your_interest input:active, .register_your_interest input:focus{
+	background: #ddd;
+	border: none;
+	box-shadow: none;
+}
+/* ~register your interest modal */
+
+/* register modal*/
+#registerModalForm{
+	padding: 0px;
+	border-radius: 8px;
+	width: 70% !important;
+    left: 55%;
+}
+#registerModalForm .panel{
+	border: none;
+	width: 94%;
+	color: #4d4d4d;
+}
+#registerModalForm .gform_anchor{
+	display: none;
+}
+#registerModalForm form{
+	display: table;
+	width: 100%;
+}
+#registerModalForm form .gform_heading{
+	display: table-caption;
+
+}
+#registerModalForm form .gform_heading h3{
+	padding: 26px;
+	font: 32px "Open Sans bold";
+	color: #4d4d4d;
+	width: 100%;
+}
+#registerModalForm form .gf_page_steps{
+	display: table-cell;
+	vertical-align: top;
+	width: 24%;
+}
+#registerModalForm form .gform_body{
+	display: table-cell;
+	vertical-align: top;
+	width: 76%;
+	padding-left: 44px;
+}
+#registerModalForm form .gfield_label{
+	width: 24%;
+	font: 15px "Open Sans Light";
+	color: #737373;
+	padding-top: 7px;
+}
+#registerModalForm .gform_wrapper .right_label input.large,
+#registerModalForm .gform_wrapper .right_label select.large,
+#registerModalForm .gform_wrapper .left_label input.large,
+#registerModalForm .gform_wrapper .left_label select.large,
+#registerModalForm .gform_wrapper textarea.textarea{
+	width: 68%;
+	border: none;
+	box-shadow: none;
+	font-size:15px;
+	font-weight:bold;
+	background-color: #ebebeb;
+	box-sizing: border-box;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+#registerModalForm .gform_wrapper .right_label input.large:hover,
+#registerModalForm .gform_wrapper .right_label select.large:hover,
+#registerModalForm .gform_wrapper .left_label input.large:hover,
+#registerModalForm .gform_wrapper .left_label select.large:hover,
+#registerModalForm .gform_wrapper textarea.textarea:hover{
+	background: #ddd;
+	border: none;
+	box-shadow: none;
+}
+
+#registerModalForm form .gf_step{
+	position: relative;
+	display: block;
+	font: 25px "Open Sans light";
+	padding: 18px 15px 18px 78px;
+	text-transform: uppercase;
+	margin: 0px;
+	height: auto;
+	border-right: 1px solid #57cb86;
+	line-height: 28px !important;
+	text-indent: -5px;
+	min-height: 92px;
+	opacity: 1;
+	background-color: transparent;
+	color: #d6d6d6;
+}
+#registerModalForm form .gf_step .gf_step_number{
+	position: absolute;
+	left: 14px;
+	display: inline-block;
+	vertical-align: middle;
+	font: 25px "Open Sans light";
+	padding: 8px 16px 8px 21px;
+	border-radius: 50%;
+	background-color: #d6d6d6;
+	color: #fff;
+}
+#registerModalForm form .gf_step.gf_step_active{
+	background: #57cb86;
+	color: #fff;
+}
+#registerModalForm form .gf_step.gf_step_active .gf_step_number{
+	background-color: #fff;
+	color: #57cb86;
+}
+#registerModalForm .gform_wrapper .gfield_html.gfield_no_follows_desc{
+	margin-top: 0px;
+}
+#registerModalForm .gform_page_footer{
+	text-align: right;
+}
+#registerModalForm .gform_page_footer input{
+	font: 25px "Open Sans light";
+	background-color: #57cb86 !important;
+}
+#registerModalForm .gform_page_footer .gform_previous_button{
+	float: left;
+}
+/* ~register modal */
+
+
+/* header */
+#header{
+	background-color: #e4e6e8; 
+	padding: 18px 0px;
+}
+	#logo{
+		float: left;
+		width: 350px;
+		margin-top: -30px;
+	}
+#header2{
+	position: relative;
+	background-color: #506f8b;
+	border-bottom: 4px solid #2e4966;
+}
+	#header_buttons{
+		float: right;
+		margin-top: 25px;
+	}
+		.login_button, #login_button, #login_button:hover{
+			position: relative;
+			background: url('../img/login.png') no-repeat center center !important;
+			width: 107px !important;
+			height: 45px !important;
+			font-size: 0px !important;
+			cursor: pointer;
+		}
+		.register_button{
+			position: relative;
+			background: url('../img/register.png') no-repeat center center;
+			width: 141px;
+			height: 45px;
+			margin-left: 2px;
+		}
+		.dashboard_button{
+			position: relative;
+			background: url('../img/dashboard.png') no-repeat center center;
+			width: 127px;
+			height: 45px;
+		}
+		.signout_button{
+			position: relative;
+			vertical-align: top;
+			margin-top: 16px;
+			margin-left: 24px;
+		}
+	#header_donate{
+		position: absolute;
+		top: 7px;
+		right: 65px;
+	}
+	#header_donate a.donate{
+		width: 109px;
+		height: 40px;
+		background: url('../img/donate.png') no-repeat center center;
+		background-size: cover
+	}
+	#header_search{
+		position: absolute;
+		top: -3px;
+		right: 10px;
+		z-index: 100;
+	}
+	#header_search #searchform{
+		margin: 0px;
+	}
+		#header_search .screen-reader-text{
+			display: none;
+		}
+		#header_search #s{
+			float: right;
+			max-width: 40px;
+			height: 40px;
+			margin-bottom: 0px;
+			margin-top: 10px;
+			border-radius: 20px;
+			box-sizing: border-box;
+			background-color: #fff;
+			transition: all .5s;
+		}
+		#header_search #s.active{
+			min-width: 250px;
+			padding-left: 10px;
+			padding-right: 50px;
+		}
+		#header_search #searchsubmit{
+			position: absolute;
+			right: 0px;
+			top: 10px;
+			vertical-align: top;
+			font-size: 0px;
+			border: 0px;
+			padding: 20px;
+			border-radius: 50%;
+			cursor: pointer;
+			outline: none;
+			background: url('../img/search_icon.png') no-repeat center center, #c7c7c7;
+		}
+		#header_search #searchsubmit:hover{
+			background-color: #CFCFCF;
+		}
+	#navbar{
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+	}
+	#navbar li{
+		position: relative;
+		display: inline-block;
+	}
+	#navbar li:not(:last-child):after{
+		content: "";
+		position: absolute;
+		background: url('../img/menu_sep.png');
+		top: 8px;
+		width: 2px;
+		height: 47px;
+	}
+	#navbar li a{
+		display: inline-block;
+		color: #fff;
+		font-size:18px;
+		padding: 15px 32px;
+		box-shadow: inset 0px 0px 0px 0px rgba(0, 6, 12, 0.11);
+		font-weight:bold;
+		transition: all .3s;
+	}
+	#navbar li a:hover{
+		box-shadow: inset 0px 65px 0px 0px rgba(0, 6, 12, 0.11);
+	}
+/* ~header2*/
+
+
+/* dean??? */
+#nav li a, #menu-item-138 a {
+	color:#48e086 !important;
+	cursor:default;
+}
+
+#nav li a, #menu-item-138 a:hover {
+	color:#48e086 !important;
+	cursor:default;
+	text-decoration:none !important;
+	box-shadow:none !important;
+}
+
+
+.alert-box.error {
+    background-color: rgb(240, 65, 36);
+    border-color: rgb(240, 65, 36);
+    color: white;
+}
+
+.note {
+	background: rgb(250, 250, 250);
+	border: 1px solid #ddd;
+	padding: 20px;
+	color: rgb(88, 88, 88);
+}

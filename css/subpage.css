@@ -1,0 +1,140 @@
+body{
+	background-color: #ededed;
+}
+
+#title{
+	background: url('../img/title.png');
+	padding: 10px 0px;
+}
+#title h2{
+	font-size:25px;
+	font-weight:bold;
+	color: #fff;
+}
+
+#page_content{
+	margin-top: 35px;
+}
+	#page_content #sub_pages{
+		list-style-type: none;
+		margin: 0px; 
+	}
+	#page_content #sub_pages li a{
+		padding:13px 0px 13px 5px;
+		display: block;
+		color: #2ea6cf;
+		font-size: 15px;
+	}
+	#page_content #sub_pages li.current_page_item a, #page_content #sub_pages li:hover a{
+		color: #fff;
+		background: url('../img/sub_pages.png') no-repeat;
+	}
+
+	#help_buttons{
+		margin-top: 36px;
+	}
+	#help_buttons .button2{
+		position: relative;
+		width: 224px;
+		height: 63px;
+		margin-bottom: 15px;
+	}
+	#help_buttons .register_button2{background: url('../img/register2.png');}
+	#help_buttons .login_button2{background: url('../img/login2.png');}
+	#help_buttons .explore_button{background: url('../img/explore.png');}
+
+	.title{
+		color: #454545;
+		margin-bottom: 18px;
+		font-size:30px;
+		font-weight:bold;
+	}
+	.page_content{
+		color: #212121;
+	}
+	.page_content p {
+		margin-bottom: 20px;
+	}
+	.page_content .green_block_row{
+		display: table-row;
+		width: 100%;
+	}
+	.page_content .green_block1,
+	.page_content .green_block2{
+		background: #06c855;
+		color: #fff !important;
+		padding: 20px;
+		font-size:18px;
+		border-bottom: 5px solid #00923b;
+		margin-bottom: 15px;
+		font-weight:bold;
+	}
+	.page_content .green_block2{
+		display: table-cell;
+		vertical-align: top;
+		width: 48%;
+		background: #5db380;
+		border-bottom: 8px solid #ededed;
+	}
+	.page_content .green_block2:nth-child(odd){
+		border-right: 8px solid #ededed;
+	}
+	.page_content .green_block1 p,
+	.page_content .green_block2 p{
+		font-size:16px;
+		font-weight:normal;
+	}
+	.page_content .green_block1 a,
+	.page_content .green_block2 a{
+		color: #80dfff;
+	}
+	.page_content .green_block1 .title, .page_content .green_block1 .title2,
+	.page_content .green_block2 .title, .page_content .green_block2 .title2{
+		display: inline-block;
+		color: #fff;
+		margin-bottom: 0px;
+		font-size:24px;
+		font-weight:bold;
+	}
+	.page_content .green_block1 .title2,
+	.page_content .green_block2 .title2{
+		font-size:24px;
+		font-weight:bold;
+	}
+
+	#footer{
+		text-align: center;
+		color: #808080;
+		margin-bottom: 50px;
+	}
+
+hr{
+	border-color: #C4C4C4;
+}
+hr.blue{
+	background: #334d68;
+	height: 8px;
+	border: none;
+	margin: 40px 0 40px 0px;
+}
+
+hr.space {
+	text-decoration:none;
+	background:transparent !important;
+	border:none !important;
+	border-color:none !important;
+}
+
+.columns-sub { 
+	position: relative;
+	float: left;
+}
+
+.small-40 {
+	width: 33%;
+	margin-left: 10px;
+}
+
+.small-80 {
+	width: 66%;
+}

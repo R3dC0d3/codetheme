@@ -1,0 +1,17 @@
+.cte_admin_page{
+	background-color: #fff;
+	margin-top: 30px;
+	margin-right: 20px;
+	border-radius: 12px;
+	box-shadow: inset 0px 0px 4px, 0px 0px 6px grey;
+	overflow: hidden;
+}
+.cte_admin_page .cte_admin_page_title{
+	font: 36px "Open Sans extrabold";
+	text-align: center;
+	padding: 20px;
+	border-bottom: 4px solid #ddd;
+}
+.cte_admin_page_content {
+	padding: 0px 20px;
+}

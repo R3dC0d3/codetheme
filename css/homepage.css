@@ -1,0 +1,52 @@
+#page{
+	background: url('../img/homepageback.jpg') no-repeat center center;
+	background-size: cover;
+	min-height: 100% !important;
+}
+
+	#homepage_body{
+		background: rgba(250, 250, 250, 0.7);
+		box-sizing: border-box;
+		border-radius: 15px;
+		margin-top: 155px;
+		margin-bottom: 70px;
+		padding: 35px;
+		position: relative;
+	}
+		#homepage_body h1{
+			font-size:40px;
+			font-weight:bold;
+			color: #161616;
+			margin-bottom: 18px;
+		}
+		#homepage_body p{
+			font-size: 20px;
+		}
+		#homepage_bubble{
+			position: absolute;
+			z-index: 1;
+			top: -175px;
+			right: -50px;
+
+			width: 435px;
+			height: 425px;
+			background: url('../img/homepage_bubble.png') no-repeat center center;
+			background-size: cover;
+
+			box-sizing: border-box;
+			padding-top: 110px;
+			padding-left: 52px;
+			color: #fff;
+		}
+		#homepage_bubble h1{
+			font:35px;
+			font-weight:bold;
+			color: #fff;
+			margin-bottom: 0px;
+		}
+		#homepage_bubble #homepage_bubble_content p{
+			margin: 0px;
+			font-size: 22px;
+		}
+
+

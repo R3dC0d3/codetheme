@@ -1,0 +1,33 @@
+#login{
+	width: 65%;
+	margin: 0px auto;
+	margin-top: 120px;
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0px 1px 0px 1px rgb(180, 180, 180);
+}
+#login .title{
+	margin-top: 50px;
+	margin-left: 28px;
+	font: 40px "Open Sans bold";
+	color: gray;
+}
+#login label{
+	color: gray;
+	font: 16px "Open Sans";
+}
+#login input{
+	border: none;
+	box-shadow: none;
+	font-size:15px;
+	font-weight:bold;
+	background-color: #ebebeb;
+	box-sizing: border-box;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+#login input:hover{
+	background: #ddd;
+	border: none;
+	box-shadow: none;
+}
